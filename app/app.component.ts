@@ -2,6 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    templateUrl: 'app/app.component.html' 
 })
-export class AppComponent { }
+export class AppComponent {
+    // [] means property binding
+    // () mean event binding  
+
+    title='Customer App';
+    name='Jared';
+    nameColor='red';
+
+    changeNameColor() {
+        this.nameColor = this.nameColor === 'blue'? 'red' : 'blue';
+    }
+}
