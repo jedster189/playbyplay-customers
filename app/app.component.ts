@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
     // [] means property binding
     // () mean event binding  
+    // [()] 
 
     title='Customer App';
     name='Jared';

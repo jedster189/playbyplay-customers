@@ -2,4 +2,7 @@
 <div [style.color]='nameColor'>
     Hello {{name}}
 </div>
+<input type="text" [value]="name" (keyup.enter)="name = $event.target.value">
+
+<input type="text" [value]="name" [(ngModel)]="name">
 <button (click)='changeNameColor()'>Change Name Color</button>
