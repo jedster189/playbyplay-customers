@@ -6,3 +6,10 @@
 
 <input type="text" [value]="name" [(ngModel)]="name">
 <button (click)='changeNameColor()'>Change Name Color</button>
+<br/>
+
+<ul>
+    <li *ngFor="let customer of customers">
+        <my-customer [customer]=customer [idColor]= idColor [nameColor]=nameColor></my-customer>
+    </li>
+</ul>
